@@ -1,5 +1,5 @@
 **Sistema de Cadastro de Contas Bancárias**
-*O que é*
+ - *O que é*
 
 - Este é um sistema simples em Java Swing que permite criar, consultar, atualizar e excluir contas bancárias. Cada conta está associada a um cliente, e você pode escolher entre Conta Corrente ou Conta Poupança.
 
