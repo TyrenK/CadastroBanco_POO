@@ -1,33 +1,36 @@
 package objetos;
 
 public abstract class Conta {
-    private String agencia, numero;
-    private double saldo;
+    
+    private int agencia = 0;
+    private int numero = 0;
+    private double saldo = 0;
 
-
-    public String getAgencia(){
-        return agencia;
-    }
-    public void setCpf(String agencia){
+    public Conta(int agencia, int numero, double saldo){
         this.agencia = agencia;
-    }
-
-    public String getNumero(){
-        return numero;
-    }
-    public void setNome(String numero){
         this.numero = numero;
-    }
-
-    public double getSaldo(){
-        return saldo;
-    }
-    public void setEndereco(double saldo){
         this.saldo = saldo;
     }
-    
-    public void gravar() {}
-    public void editar() {}
-    public void excluir() {}
-    public void cancelar() {}
+
+    public int getAgencia(){ 
+        return this.agencia; 
+    }
+    public void setAgencia(int agencia){ 
+        this.agencia = agencia; 
+    }
+
+    public int getNumero(){ 
+        return this.numero; 
+    }
+    public void setNumero(int numero){ 
+        this.numero = numero; 
+    }
+
+    public double getSaldo(){ 
+        return this.saldo; 
+    }
+    public void setSaldo(double saldo){ 
+        this.saldo = saldo; 
+    }
+
 }

@@ -1,13 +1,13 @@
 package objetos;
 
-public class Pessoa {
+public abstract class Pessoa {
     private String cpf, nome, endereco, telefone;
 
-    public Pessoa(String cpf, String nome, String endereco, String telefone) {
-        this.cpf = cpf;
+    public Pessoa(String nome, String endereco, String telefone, String cpf){
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
+        this.cpf = cpf;
     }
 
     public String getCpf(){
@@ -38,8 +38,5 @@ public class Pessoa {
         this.telefone = telefone;
     }
 
-    public void gravar() {}
-    public void editar() {}
-    public void excluir() {}
-    public void cancelar() {}
+
 }
